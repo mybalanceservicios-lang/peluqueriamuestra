@@ -10,7 +10,7 @@ Versión de **demostración** del sistema: la persona escanea un QR, se abre con
 - **Sin servidor ni cuentas:** no hay Supabase, ni mails, ni claves reales. Todo se guarda en el `localStorage` del dispositivo de quien prueba.
 - **Perfiles:** cada barbero entra con un toque; el perfil **Dueño** usa la clave `1234` (se muestra en pantalla).
 - **Datos de ejemplo:** ~70 días de cortes, ventas, gastos, cierres de caja y turnos para hoy y los próximos días. Se regeneran solos cada día para que la agenda nunca quede vacía. Los teléfonos son ficticios (`11 0000-xxxx`).
-- **Límite de prueba:** 7 días desde el primer ingreso en ese dispositivo. Después aparece una pantalla de "Tu prueba terminó" con el contacto. Se cambia en `demo.js` (`DEMO_DIAS`, `CONTACTO_URL`, `CONTACTO_TXT`).
+- **Límite de prueba:** 3 días desde el primer ingreso en ese dispositivo. Después aparece una pantalla de "Tu prueba terminó" con el contacto. Se cambia en `demo.js` (`DEMO_DIAS`, `CONTACTO_URL`, `CONTACTO_TXT`); el botón final abre WhatsApp.
 - **Reiniciar demo:** botón en la barra superior; vuelve a los datos de ejemplo pero **no** reinicia el reloj de prueba.
 
 > El límite se controla desde el propio navegador: si alguien borra los datos del sitio o entra en pestaña privada, la prueba vuelve a empezar. Para una demo alcanza; un límite estricto requiere servidor y cuentas.

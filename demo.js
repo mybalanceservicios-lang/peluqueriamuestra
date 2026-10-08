@@ -10,9 +10,9 @@
   "use strict";
 
   /* ---------- Configuración (lo único que hace falta tocar) ---------- */
-  var DEMO_DIAS = 7;                                  // días de prueba desde el primer ingreso
-  var CONTACTO_URL = "https://www.instagram.com/rt.designweb";
-  var CONTACTO_TXT = "@rt.designweb";
+  var DEMO_DIAS = 3;                                  // días de prueba desde el primer ingreso
+  var CONTACTO_URL = "https://wa.me/5491141627425?text=" + encodeURIComponent("Hola! Probé la demo del sistema para barberías y quiero el mío.");
+  var CONTACTO_TXT = "WhatsApp 11 4162-7425";
   var PIN_DEMO = "1234";                              // clave del perfil Dueño en la demo
 
   var KEY = "barberia_v1";                            // misma clave que usa el sistema
@@ -254,7 +254,7 @@
       "#demo-fin .box{max-width:420px;text-align:center}" +
       "#demo-fin h1{font-size:26px;margin:0 0 12px}" +
       "#demo-fin p{color:#b9b5aa;line-height:1.5;margin:0 0 22px;font-size:16px}" +
-      "#demo-fin a{display:inline-block;background:#CE9E3B;color:#1a1206;font-weight:800;text-decoration:none;padding:14px 26px;border-radius:12px;font-size:16px}" +
+      "#demo-fin a{display:inline-block;background:#25D366;color:#06210f;font-weight:800;text-decoration:none;padding:14px 26px;border-radius:12px;font-size:16px}" +
       "#demo-fin small{display:block;margin-top:16px;color:#8c887e}";
     document.head.appendChild(s);
   }
@@ -264,8 +264,8 @@
     d.innerHTML =
       '<div class="box"><h1>Tu prueba gratuita terminó</h1>' +
       "<p>Esperamos que hayas podido ver cómo funciona el sistema para tu barbería: turnos online, cortes, comisiones y cierre de caja en un solo lugar.</p>" +
-      '<a href="' + CONTACTO_URL + '" target="_blank" rel="noopener">Quiero mi sistema</a>' +
-      "<small>Escribinos a " + CONTACTO_TXT + " y lo armamos con el nombre y los precios de tu barbería.</small></div>";
+      '<a href="' + CONTACTO_URL + '" target="_blank" rel="noopener">Quiero mi sistema · WhatsApp</a>' +
+      "<small>Escribinos al " + CONTACTO_TXT + " y lo armamos con el nombre y los precios de tu barbería.</small></div>";
     document.body.appendChild(d);
     document.documentElement.style.overflow = "hidden";
   }
